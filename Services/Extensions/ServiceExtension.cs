@@ -15,7 +15,7 @@ namespace App.Services.Extensions
     {
         public static IServiceCollection AddServices(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddScoped<IProductService, ProducService>();
+            services.AddScoped<IProductService, ProductService>();
             return services;
         }
     }
