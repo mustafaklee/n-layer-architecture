@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
+using App.Repositories.Products;
 namespace App.Repositories.Extensions
 {
     //	  <FrameworkReference Include="Microsoft.AspNetCore.App" />
@@ -21,6 +22,11 @@ namespace App.Repositories.Extensions
                         mysqlServerOptionsAction.MigrationsAssembly(typeof(RepositoryAssembly).Assembly.FullName);
                     });
             });
+
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<IProductRepository, ProductRepository>();
+            //generic oldugu icin typeof ifadesi kullanıldı.
+            services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             //program.cs de dönen servicesi ilerde kullanabilmek icin
             return services;
         }

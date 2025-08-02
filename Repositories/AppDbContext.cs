@@ -13,7 +13,6 @@ namespace App.Repositories
             //20 tane configuration dosyamız oldugunu düşünürsek cok uzun bir işlem olur
             //modelBuilder.ApplyConfiguration(new ProductConfiguration);
             //bunun yerine biz assembly olarak IEntityTypeConfiguration interfacesini implemente etmiş olan classları alıyoruz.
-
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
 
 

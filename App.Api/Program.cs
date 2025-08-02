@@ -1,5 +1,6 @@
 using App.Repositories;
 using App.Repositories.Extensions;
+using App.Services.Extensions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
@@ -22,7 +23,7 @@ builder.Services.AddSwaggerGen();
 //        new MySqlServerVersion(new Version(8, 0, 0))
 //));
 
-builder.Services.AddRepositories(builder.Configuration);
+builder.Services.AddRepositories(builder.Configuration).AddServices(builder.Configuration);
 
 
 

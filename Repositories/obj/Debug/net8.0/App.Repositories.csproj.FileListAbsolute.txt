@@ -12,3 +12,4 @@ C:\Users\musta\OneDrive\Masaüstü\NLayerClearnArcitecture\Repositories\obj\Debu
 C:\Users\musta\OneDrive\Masaüstü\NLayerClearnArcitecture\Repositories\obj\Debug\net8.0\App.Repositories.pdb
 C:\Users\musta\OneDrive\Masaüstü\NLayerClearnArcitecture\Repositories\obj\Debug\net8.0\App.Repositories.genruntimeconfig.cache
 C:\Users\musta\OneDrive\Masaüstü\NLayerClearnArcitecture\Repositories\obj\Debug\net8.0\ref\App.Repositories.dll
+C:\Users\musta\OneDrive\Masaüstü\NLayerClearnArcitecture\Repositories\obj\Debug\net8.0\App.Repositories.sourcelink.json
