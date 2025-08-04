@@ -1,14 +1,10 @@
-﻿using App.Repositories.Products;
-using App.Repositories;
+﻿using App.Services.Products;
+using App.Services.Products.Mapping;
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using App.Services.Products;
-
+using System.Reflection;
 namespace App.Services.Extensions
 {
     public static class ServiceExtension
@@ -16,6 +12,14 @@ namespace App.Services.Extensions
         public static IServiceCollection AddServices(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddScoped<IProductService, ProductService>();
+            services.AddFluentValidationAutoValidation();
+            //bu dizinde ara dosyaları.
+            services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+
+            //automapper DI container
+            services.AddAutoMapper(Assembly.GetExecutingAssembly());
+
+
             return services;
         }
     }
