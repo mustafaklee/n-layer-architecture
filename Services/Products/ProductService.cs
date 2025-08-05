@@ -1,5 +1,6 @@
 ﻿using App.Repositories;
 using App.Repositories.Products;
+using App.Services.ExceptionHandler;
 using App.Services.Products.Create;
 using App.Services.Products.Update;
 using AutoMapper;
@@ -62,7 +63,6 @@ namespace App.Services.Products
 
         public async Task<ServiceResult<CreateProductResponse>> CreateAsync(CreateProductRequest request)
         {
-
             //asenkron olarak Service business validation yapalım.
             //var anyProduct = await productRepository.Where(x => x.Name  == request.Name).AnyAsync();
             //if (anyProduct)

@@ -8,7 +8,7 @@ namespace App.Services.Products.Create
         private readonly IProductRepository _productRepository;
         public CreateProductRequestValidator(IProductRepository productRepository)
         {
-            productRepository = _productRepository;
+            _productRepository = productRepository;
             //notnull kullanmak icin degisken tipi nullable olmalıdır.örneğin int ise int'i nullable yapmalıyız.
             RuleFor(x => x.Name)
                 .NotEmpty().WithMessage("Ürün Gereklidir")
