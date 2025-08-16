@@ -2,6 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using App.Repositories.Products;
+using App.Application.Contracts.Persistence;
 namespace App.Repositories.Extensions
 {
     //	  <FrameworkReference Include="Microsoft.AspNetCore.App" />

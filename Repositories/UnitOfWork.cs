@@ -1,4 +1,6 @@
-﻿namespace App.Repositories
+﻿using App.Repositories;
+
+namespace App.Application.Contracts.Persistence
 {
     public class UnitOfWork(AppDbContext context) : IUnitOfWork
     {
