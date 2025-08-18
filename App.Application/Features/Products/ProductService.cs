@@ -1,4 +1,5 @@
-﻿using App.Application.Contracts.Persistence;
+﻿using App.Application.Contracts.Caching;
+using App.Application.Contracts.Persistence;
 using App.Application.Features.Products.Create;
 using App.Application.Features.Products.Dto;
 using App.Application.Features.Products.Update;
@@ -6,7 +7,7 @@ using AutoMapper;
 using System.Net;
 namespace App.Application.Features.Product
 {
-    public class ProductService(IProductRepository productRepository,IUnitOfWork unitOfWork,IMapper mapper):IProductService
+    public class ProductService(IProductRepository productRepository,IUnitOfWork unitOfWork,IMapper mapper,ICacheService cacheService):IProductService
     {
         public async Task<ServiceResult<List<ProductDto>>> GetTopPriceProductAsync(int count)
         {
@@ -23,14 +24,30 @@ namespace App.Application.Features.Product
                 StatusCode = HttpStatusCode.OK,
             };
         }
-
+        private const string ProductListCacheKey = "ProductListCacheKey";
         public async Task<ServiceResult<List<ProductDto>>> GetAllListAsync()
         {
+
+            //cache aside design pattern
+            //1. any cache
+            //2. from db
+            //3. set cache
+
+            //any cache
+            var productListAsCache = await cacheService.GetAsync<List<ProductDto>>(ProductListCacheKey);
+            if(productListAsCache is not null)
+            {
+                return ServiceResult<List<ProductDto>>.Success(productListAsCache);
+            }
+
+            //from db
             var products = await productRepository.GetAllAsynce();
 
             //var productAsDto = products.Select(p=> new ProductDto(p.Id , p.Name, p.Price,p.Stock)).ToList();
 
             var productAsDto = mapper.Map<List<ProductDto>>(products);
+            //set cache
+            await cacheService.AddAsync(ProductListCacheKey, productAsDto, TimeSpan.FromMinutes(1));
 
             return ServiceResult<List<ProductDto>>.Success(productAsDto);
 

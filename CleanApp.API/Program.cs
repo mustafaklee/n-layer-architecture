@@ -1,4 +1,6 @@
+using App.Application.Contracts.Caching;
 using App.Application.Extensions;
+using App.Caching;
 using App.Persistence.Extensions;
 using CleanApp.API.ExceptionHandler;
 using CleanApp.API.Filters;
@@ -32,6 +34,9 @@ builder.Services.Configure<ApiBehaviorOptions>(options => options.SuppressModelS
 builder.Services.AddExceptionHandler<CriticalExceptionHandler>();
 //burda ise hatayý iþleme evresine denk geliyoruz.bu bölüm true döndüðü için exception baþka bir yere takýlmaz.
 builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
+
+builder.Services.AddMemoryCache();
+builder.Services.AddSingleton<ICacheService,CacheService>();
 
 
 //Options Pattern üzerinden gittiðimiz için bu þekilde yapmadýk

@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\musta\\OneDrive\\Masa\u00FCst\u00FC\\NLayerClearnArcitecture\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9911E0F4-850A-483E-8DBD-025A82B2F865}|App.Persistence\\App.Persistence.csproj|c:\\users\\musta\\onedrive\\masa\u00FCst\u00FC\\nlayerclearnarcitecture\\app.persistence\\extensions\\repositoryextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9911E0F4-850A-483E-8DBD-025A82B2F865}|App.Persistence\\App.Persistence.csproj|solutionrelative:app.persistence\\extensions\\repositoryextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{29A40D0F-9189-2FAD-58BA-BB372C8F70EE}|App.Application\\App.Application.csproj|c:\\users\\musta\\onedrive\\masa\u00FCst\u00FC\\nlayerclearnarcitecture\\app.application\\features\\products\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29A40D0F-9189-2FAD-58BA-BB372C8F70EE}|App.Application\\App.Application.csproj|solutionrelative:app.application\\features\\products\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{209C0497-D065-4DA6-ADDE-69824B241F34}|CleanApp.API\\CleanApp.API.csproj|c:\\users\\musta\\onedrive\\masa\u00FCst\u00FC\\nlayerclearnarcitecture\\cleanapp.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{209C0497-D065-4DA6-ADDE-69824B241F34}|CleanApp.API\\CleanApp.API.csproj|solutionrelative:cleanapp.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -29,21 +33,34 @@
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "RepositoryExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\musta\\OneDrive\\Masa\u00FCst\u00FC\\NLayerClearnArcitecture\\App.Persistence\\Extensions\\RepositoryExtensions.cs",
-              "RelativeDocumentMoniker": "App.Persistence\\Extensions\\RepositoryExtensions.cs",
-              "ToolTip": "C:\\Users\\musta\\OneDrive\\Masa\u00FCst\u00FC\\NLayerClearnArcitecture\\App.Persistence\\Extensions\\RepositoryExtensions.cs",
-              "RelativeToolTip": "App.Persistence\\Extensions\\RepositoryExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\musta\\OneDrive\\Masa\u00FCst\u00FC\\NLayerClearnArcitecture\\App.Application\\Features\\Products\\ProductService.cs",
+              "RelativeDocumentMoniker": "App.Application\\Features\\Products\\ProductService.cs",
+              "ToolTip": "C:\\Users\\musta\\OneDrive\\Masa\u00FCst\u00FC\\NLayerClearnArcitecture\\App.Application\\Features\\Products\\ProductService.cs",
+              "RelativeToolTip": "App.Application\\Features\\Products\\ProductService.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAewDUAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-16T18:06:21.509Z",
+              "WhenOpened": "2025-08-18T14:05:56.532Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\musta\\OneDrive\\Masa\u00FCst\u00FC\\NLayerClearnArcitecture\\CleanApp.API\\Program.cs",
+              "RelativeDocumentMoniker": "CleanApp.API\\Program.cs",
+              "ToolTip": "C:\\Users\\musta\\OneDrive\\Masa\u00FCst\u00FC\\NLayerClearnArcitecture\\CleanApp.API\\Program.cs",
+              "RelativeToolTip": "CleanApp.API\\Program.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAowCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T14:03:18.735Z",
+              "EditorCaption": ""
             }
           ]
         }
