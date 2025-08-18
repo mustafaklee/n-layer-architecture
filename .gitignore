@@ -1,0 +1,55 @@
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build sonuçları
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Rider
+.idea/
+
+# Visual Studio Code
+.vscode/
+
+# Paketler
+*.nupkg
+*.snupkg
+*.nuspec
+packages/
+
+# Dotnet restore çıktısı
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Cache
+*.dll
+*.exe
+*.pdb
+*.cache
+*.config
+*.db
+
+# Publish çıktısı
+publish/
+out/
+
+# Test sonuçları
+TestResult*/
+*.trx
+*.coverage
+*.coveragexml
+
+# NuGet
+*.nuget.props
+*.nuget.targets
+
+# Mac/Windows gereksizleri
+.DS_Store
+Thumbs.db
