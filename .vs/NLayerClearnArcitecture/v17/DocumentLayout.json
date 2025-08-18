@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\musta\\OneDrive\\Masa\u00FCst\u00FC\\NLayerClearnArcitecture\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{209C0497-D065-4DA6-ADDE-69824B241F34}|CleanApp.API\\CleanApp.API.csproj|c:\\users\\musta\\onedrive\\masa\u00FCst\u00FC\\nlayerclearnarcitecture\\cleanapp.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{209C0497-D065-4DA6-ADDE-69824B241F34}|CleanApp.API\\CleanApp.API.csproj|solutionrelative:cleanapp.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{209C0497-D065-4DA6-ADDE-69824B241F34}|CleanApp.API\\CleanApp.API.csproj|c:\\users\\musta\\onedrive\\masa\u00FCst\u00FC\\nlayerclearnarcitecture\\cleanapp.api\\extensions\\exceptionhandlerextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{209C0497-D065-4DA6-ADDE-69824B241F34}|CleanApp.API\\CleanApp.API.csproj|solutionrelative:cleanapp.api\\extensions\\exceptionhandlerextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +31,32 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ExceptionHandlerExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\musta\\OneDrive\\Masa\u00FCst\u00FC\\NLayerClearnArcitecture\\CleanApp.API\\Extensions\\ExceptionHandlerExtensions.cs",
+              "RelativeDocumentMoniker": "CleanApp.API\\Extensions\\ExceptionHandlerExtensions.cs",
+              "ToolTip": "C:\\Users\\musta\\OneDrive\\Masa\u00FCst\u00FC\\NLayerClearnArcitecture\\CleanApp.API\\Extensions\\ExceptionHandlerExtensions.cs",
+              "RelativeToolTip": "CleanApp.API\\Extensions\\ExceptionHandlerExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T14:58:52.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\musta\\OneDrive\\Masa\u00FCst\u00FC\\NLayerClearnArcitecture\\CleanApp.API\\Program.cs",
+              "RelativeDocumentMoniker": "CleanApp.API\\Program.cs",
+              "ToolTip": "C:\\Users\\musta\\OneDrive\\Masa\u00FCst\u00FC\\NLayerClearnArcitecture\\CleanApp.API\\Program.cs",
+              "RelativeToolTip": "CleanApp.API\\Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAABoAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T14:40:29.412Z",
+              "EditorCaption": ""
             }
           ]
         }
